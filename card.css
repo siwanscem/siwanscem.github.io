@@ -1,0 +1,292 @@
+#card {
+  scale: 1.1;
+  height: 86mm;
+  width: 54mm;
+  margin: 5rem auto;
+  border: 0px solid green;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 6px;
+  background-color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#card h1 {
+  padding: 2mm;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  color: rgb(3, 90, 3);
+  line-height: 0.9;
+  text-transform: uppercase;
+  margin: 0rem;
+}
+
+#card h1 span {
+  letter-spacing: -0.35mm;
+}
+
+#card div:nth-of-type(1) {
+  display: flex;
+}
+
+#card div:nth-of-type(1) span:nth-of-type(1) {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: x-small;
+  font-weight: 550;
+  color: rgb(231, 1, 1);
+  display: inline-block;
+  align-items: center;
+  align-content: center;
+  margin-left: 2.6rem;
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.2mm;
+  z-index: 2;
+}
+
+#card div:nth-of-type(1) img {
+  max-width: 40%;
+  border: 0.7mm solid rgb(3, 90, 3);
+  min-height: 26mm;
+  max-height: 26mm;
+  max-width: 23mm;
+  min-width: 23mm;
+  margin: 0 0.1rem;
+  margin-bottom: 1rem;
+  z-index: 2;
+}
+
+#card div:nth-of-type(1) span:nth-of-type(2) {
+  margin: 0 0.2rem;
+  font-size: normal;
+  font-weight: 600;
+  transform: translateY(-2.5mm);
+  align-content: center;
+  z-index: 3;
+}
+
+#card div:nth-of-type(1) span:nth-of-type(2) sup {
+  font-size: xx-small;
+}
+
+#card div:nth-of-type(2) {
+  color: rgb(231, 1, 1);
+  font-size: normal;
+  text-align: center;
+  margin-top: 0.5mm;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 550;
+  position: relative;
+  transform: translateY(-1rem);
+  z-index: 2;
+}
+
+#card div:nth-of-type(3) {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5mm 0.8rem;
+  position: relative;
+  transform: translateY(-1.2rem);
+}
+
+#card div:nth-of-type(3) span:nth-of-type(1) {
+  font-size: x-small;
+}
+
+#card div:nth-of-type(3) span:nth-of-type(1) span {
+  color: green;
+}
+
+#card div:nth-of-type(3) span:nth-of-type(2) {
+  font-size: x-small;
+}
+
+#card div:nth-of-type(3) span:nth-of-type(2) span {
+  color: green;
+}
+
+#card>table {
+  font-size: x-small;
+  margin: 0rem 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  line-height: 1.25;
+  height: 25mm;
+  position: relative;
+  transform: translateY(-1.4rem);
+  z-index: 5;
+}
+
+#card>table tr {
+  display: flex;
+  width: 50mm;
+}
+
+#card>table tr td:nth-of-type(1) {
+  width: 20%;
+}
+
+#card>table tr td:nth-of-type(2) {
+  width: 70%;
+}
+
+#card>table tr:nth-of-type(5) {
+  max-height: 7.4mm;
+  overflow: hidden;
+}
+
+#card div:nth-of-type(4) {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  margin: 0rem 1rem;
+  position: sticky;
+  transform: translateY(-15.4mm);
+}
+
+#card div:nth-of-type(4) img {
+  max-width: 24mm;
+  float: right;
+  transform: translate(0mm, 3mm);
+}
+
+#card div:nth-of-type(4) span {
+  font-size: xx-small;
+  color: red;
+  font-weight: 600;
+}
+
+#card div:nth-of-type(5) {
+  font-size: xx-small;
+  background-color: rgb(3, 90, 3);
+  color: white;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+  text-align: center;
+
+  transform: translateY(-3.62rem);
+  height: 6.5mm;
+}
+
+#card #logo img {
+  position: relative;
+  max-width: 75%;
+  margin: 0 auto;
+  mix-blend-mode: multiply;
+  opacity: 0.1;
+  transform: translate(8mm, -65mm);
+  z-index: 2;
+}
+
+#card:hover {
+  transition-duration: 2s;
+
+}
+
+button {
+  padding: 0.5rem;
+  font-size: normal;
+  background-color: #ffc928;
+  border-top-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#card #grad {
+  display: flex;
+  z-index: 1;
+  width: 54mm;
+  position: relative;
+  transform: translate(-8mm, -128mm);
+  overflow: unset;
+}
+
+#card #grad div:nth-of-type(1) {
+  display: inline-block;
+  transform: rotate(-20deg) skew(-20deg) translate(6.5mm, 0mm);
+}
+
+#card #grad div:nth-of-type(2) {
+  display: inline-block;
+
+  transform: rotate(-20deg) skew(-20deg) translate(-25.5mm, -9mm);
+}
+
+#card #grad div:nth-of-type(1) span:nth-of-type(1) {
+  display: block;
+  width: 46mm;
+  height: 3mm;
+  transform: translate(-11mm, 4mm);
+  background-image: linear-gradient(to right,
+      rgb(4, 63, 4),
+      rgba(0, 128, 0, 0.2));
+}
+
+#card #grad div:nth-of-type(1) span:nth-of-type(2) {
+  display: block;
+  width: 46mm;
+  height: 5mm;
+  transform: translate(-0.8mm, -2.1mm);
+  background-image: linear-gradient(to right, green, rgba(0, 128, 0, 0.2));
+}
+
+#card #grad div:nth-of-type(1) span:nth-of-type(3) {
+  display: block;
+  width: 30mm;
+  height: 3mm;
+  transform: translateY(-2.1mm);
+  background-image: linear-gradient(to right, rgb(4, 63, 4), white);
+}
+
+#card #grad div:nth-of-type(1) span:nth-of-type(4) {
+  display: block;
+  width: 30mm;
+  height: 7mm;
+  transform: translateY(-2.1mm);
+  background-image: linear-gradient(to right, green, white);
+}
+
+#card #grad div:nth-of-type(2) span:nth-of-type(1) {
+  display: block;
+  width: 17mm;
+  height: 8mm;
+  transform: translate(12.6mm, -2.5mm);
+  background-image: linear-gradient(20deg,
+      rgba(0, 128, 0, 0.6) 50%,
+      rgb(3, 35, 3, 0.9) 50%);
+}
+
+#card #grad div:nth-of-type(2) span:nth-of-type(2) {
+  display: block;
+  width: 45mm;
+  height: 4mm;
+  transform: translate(-15.5mm, -2.5mm);
+  background-image: linear-gradient(to right,
+      rgba(0, 128, 0, 0),
+      rgb(3, 35, 3, 0.8));
+}
+
+#card #grad div:nth-of-type(2) span:nth-of-type(3) {
+  display: block;
+  width: 45mm;
+  height: 4mm;
+  transform: translate(-15.5mm, -2.5mm);
+  background-color: rgba(0, 128, 0, 0.1);
+}
+
+#card #grad div:nth-of-type(2) span:nth-of-type(4) {
+  display: block;
+  width: 45mm;
+  height: 8mm;
+  transform: translate(-15.5mm, -2.5mm);
+  background-image: linear-gradient(to right,
+      rgba(0, 128, 0, 0),
+      rgba(0, 128, 0, 0.2),
+      rgba(0, 128, 0, 0.4),
+      rgba(0, 128, 0, 0.6),
+      rgb(3, 35, 3, 0.8));
+}
