@@ -28,10 +28,12 @@ p{
     text-align: justify;
   max-width: 750px;
   margin: 0 auto;
-   
+   padding: 0 1rem;
 }
 p:nth-of-type(5){
+
     padding-bottom: 5rem;
+    
 }
 h1{
     font-family: cursive;

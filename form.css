@@ -38,7 +38,18 @@ body {
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+#myForm button:hover{
+  
+ transition-duration: 1s;
+ scale: 1.1;
+ cursor: pointer;
+}
+#myForm button:active{
+  box-shadow: 2px 2px 4px black;
+  transition-duration: 0.2s;
+  background-color: red;
 
+}
 
 #author {
   display: block;
