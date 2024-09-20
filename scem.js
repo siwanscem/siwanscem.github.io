@@ -128,6 +128,9 @@ function generateHTML() {
     <button id="pre" onclick="hide();window.print();">
       Print this ID-Card
     </button>
+
+
+    
   </body>
 </html>
 
@@ -142,6 +145,6 @@ function generateHTML() {
 
 function hide() {
   document.getElementById("tohide2").style.display = "none";
-
+  document.getElementById("png").style.display = "none";
   document.getElementById("pre").style.display = "none";
 }

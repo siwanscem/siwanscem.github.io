@@ -3,6 +3,15 @@ body {
 
 }
 
+
+
+#hiddenlink{
+  text-decoration: none;
+  cursor:auto;
+  color:royalblue ;
+}
+
+
 #nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -37,6 +46,7 @@ body {
 #nav ul a li:active {
   border-radius: 0;
   scale: 1.2;
+  transition-duration: 300ms;
   background-color: #ffc928;
   box-shadow: none;
 }
@@ -47,7 +57,7 @@ body {
   padding-left: 0;
 }
 
-#nav ul a:nth-of-type(5) li {
+#nav ul a:nth-of-type(4) li {
   width: 1rem;
   height: 1rem;
   display: flex;
