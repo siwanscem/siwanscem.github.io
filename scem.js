@@ -20,9 +20,10 @@ function generateHTML() {
     heading = scem;
     lglink = "/asset/newlogo.png";
   }
-
+ 
   const name = document.getElementById("name").value;
   const session = document.getElementById("session").value;
+  const tsession = document.getElementById("tsession").value;
   const imglink = document.getElementById("profilepic").src;
   const bgrp = document.getElementById("bgrp").value;
   const rh = document.getElementById("rh").value;
@@ -52,11 +53,11 @@ function generateHTML() {
     <div id="card">
       ${heading}
       <div class="flex">
-        <span>Session : ${session}</span>
+        <span>Session : ${session}${tsession}</span>
         <img id="pic" src="${imglink}" alt="_picture" />
         <span>&#129656;<br />${bgrp}<sup style="display: inline">${rh}</sup></span>
       </div>
-      <div><i>&nbsp;${name}&nbsp;</i></div>
+      <div><i>&nbsp;${name}</i></div>
       <div>
         <span> Course : <span>${course}</span> </span>
         <span> Branch : <span>${branch}</span> </span>
@@ -80,7 +81,7 @@ function generateHTML() {
         </tr>
         <tr>
           <td>Address</td>
-          <td>: ${area}${dist}${pin} &nbsp;&nbsp;&nbsp;</td>
+          <td>: ${area} ${dist} ${pin} &nbsp;&nbsp;&nbsp;</td>
         </tr>
       </table>
       
@@ -128,11 +129,6 @@ function generateHTML() {
     <button id="pre" onclick="hide();window.print();">
       Print this ID-Card
     </button>
-
-     <button id="savePdf">
-      Download
-    </button>
-
     
   </body>
 </html>

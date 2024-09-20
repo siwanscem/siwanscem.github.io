@@ -150,7 +150,10 @@ body {
 }
 
 #myForm #session {
-  width: 10rem;
+  width: 6rem;
+}
+#myForm #tsession {
+  width: 6rem;
 }
 
 #myForm #mob {
