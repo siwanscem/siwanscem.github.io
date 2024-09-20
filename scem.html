@@ -8,7 +8,9 @@
 
   <link rel="stylesheet" href="/form.css" />
   <link rel="stylesheet" href="/card.css" />
-
+  <!-- js pdf library for printing in png  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 </head>
 
 <body>
@@ -175,26 +177,20 @@
   </div>
   <div id="idcard"></div>
 
-  <button id="png">
-    Download
-  </button>
   <script src="/scem.js"></script>
+    <script>
+      document.getElementById('savePdf').addEventListener('click',function(){
+        const { jsPDF } = window.jspdf;
 
-  <script src="/printlib/domtoimage.js"></script>
-  <script>
-    var mycard = document.getElementById("idcard")[0];
-    var downloadbtn = document.getElementById("png");
-
-    downloadbtn.addEventListener("click",()=>{
-
-      domtoimage.toPng(idcard).then((data)=>{
-        var link = document.createElement("a");
-        link.download = "your_id_card.png";
-        link.href = data;
-        link.click();
-      });
-    });
-  </script>
+        html2canvas(document.querySelector('#idcard')).then(canvas=>{
+          const imgData = 
+          canvas.toDataURL('image/png');
+          const pdf = new jsPDF();
+          pdf.addImage(imgData,'PNG', 0,0);
+          pdf.save("youridcard.pdf");
+        });
+        });
+    </script>
 </body>
 
 </html>

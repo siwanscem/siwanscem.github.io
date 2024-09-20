@@ -129,6 +129,9 @@ function generateHTML() {
       Print this ID-Card
     </button>
 
+     <button id="savePdf">
+      Download
+    </button>
 
     
   </body>
@@ -145,6 +148,5 @@ function generateHTML() {
 
 function hide() {
   document.getElementById("tohide2").style.display = "none";
-  document.getElementById("png").style.display = "none";
   document.getElementById("pre").style.display = "none";
 }
