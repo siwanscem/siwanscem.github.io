@@ -10,5 +10,5 @@ document.addEventListener('DOMContentLoaded', function () {
 			pdf.save('Youridcard.pdf');
 		});
 	});
-	
+
 });
