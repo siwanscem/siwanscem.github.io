@@ -43,9 +43,9 @@ function generateHTML() {
     <div id="card">
       ${heading}
       <div class="flex">
-        <span>Session : ${session}${tsession}</span>
+          <span id="sesion">Session&nbsp;:&nbsp;${session}&nbsp;${tsession}</span>
         <img id="pic" src="${imglink}" alt="_picture" />
-        <span>&#129656;<br />${bgrp}<sup style="display: inline">${rh}</sup></span>
+        <span>&#129656;<br />${bgrp}&nbsp;<sup style="display: inline">${rh}</sup></span>
       </div>
       <div><i>&nbsp;${name}</i></div>
       <div>
@@ -112,6 +112,8 @@ function generateHTML() {
          &nbsp;
         </span>
          </div>
+
+       
       </div>
     </div>
 

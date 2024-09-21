@@ -1,7 +1,3 @@
-
-
-
-
 #card {
   scale: 1;
   height: 86mm;
@@ -19,13 +15,13 @@
   padding: 2mm 1mm;
   text-align: center;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 750;
 
   color: rgb(3, 90, 3);
   line-height: 0.9;
   text-transform: uppercase;
   margin: 0rem;
-  
+
 }
 
 #card h1 span {
@@ -35,45 +31,55 @@
 
 #card div:nth-of-type(1) {
   display: flex;
+
 }
 
+
+
+
 #card div:nth-of-type(1) span:nth-of-type(1) {
-  writing-mode: vertical-lr;
-  transform: rotate(180deg);
+
+  padding-right: 0mm;
+  margin-bottom: 1.4rem;
+  letter-spacing: 0.1mm;
+  z-index: 2;
+display: inline;
+
   font-size: x-small;
   font-weight: 550;
   color: rgb(231, 1, 1);
-  display: inline-block;
-  align-items: center;
-  align-content: center;
-  margin-left: 2.6rem;
-  margin-bottom: 1.4rem;
-  letter-spacing: 0.2mm;
-  z-index: 2;
+  position: relative;
+  transform: translateX(12mm) rotate(-90deg);
 }
 
+
+
 #card div:nth-of-type(1) img {
-  max-width: 40%;
+
   border: 0.7mm solid rgb(3, 90, 3);
   min-height: 26mm;
   max-height: 26mm;
   max-width: 23mm;
   min-width: 23mm;
   margin: 0 0.1rem;
-  mix-blend-mode:normal;
+  position: relative;
+  transform: translateX(-8mm);
+  mix-blend-mode: normal;
   margin-bottom: 1rem;
   z-index: 5;
 
 }
 
+
 #card div:nth-of-type(1) span:nth-of-type(2) {
   margin: 0 0.2rem;
-  font-size: normal;
+  font-size: small;
   font-weight: 600;
-  transform: translateY(-2.5mm);
+  transform: translate(-7mm,-2.5mm);
   align-content: center;
   z-index: 3;
 }
+
 
 #card div:nth-of-type(1) span:nth-of-type(2) sup {
   font-size: xx-small;
@@ -89,9 +95,10 @@
   position: relative;
   transform: translateY(-1rem);
   z-index: 2;
- 
-  
+
+
 }
+
 
 #card div:nth-of-type(3) {
   display: flex;
@@ -223,32 +230,31 @@ button:active {
 
 #card #grad {
   display: flex;
-  z-index:-2;
+  z-index: -2;
 
   width: 54mm;
   position: relative;
-  transform: translate(-8mm, -128mm);
+  transform: translate(-8mm, -128.5mm);
   overflow: unset;
 }
 
 #card #grad div:nth-of-type(1) {
   display: inline-block;
-  transform: rotate(-20deg) skew(-20deg) translate(6.5mm, 0mm);
+  transform: rotate(-20deg) skew(-20deg) translate(6.65mm, 5.5mm);
 
 }
 
 #card #grad div:nth-of-type(2) {
   display: inline-block;
 
-  transform: rotate(-20deg) skew(-20deg) translate(-25.5mm, -9mm);
+  transform: rotate(-20deg) skew(-20deg) translate(-16.4mm, -3mm);
 }
 
 #card #grad div:nth-of-type(1) span:nth-of-type(1) {
   display: block;
-  width: 46mm;
+  width: 46.5mm;
   height: 3mm;
-  transform: translate(-11mm, 4mm);
-  
+  transform: translate(0mm, 0mm);
   background-image: linear-gradient(to right,
       rgb(4, 63, 4),
       rgba(0, 128, 0, 0.2));
@@ -256,9 +262,9 @@ button:active {
 
 #card #grad div:nth-of-type(1) span:nth-of-type(2) {
   display: block;
-  width: 46mm;
-  height: 5mm;
-  transform: translate(-0.8mm, -2.1mm);
+  width: 46.5mm;
+  height: 5.2mm;
+  transform: translate(-0.8mm, -6mm);
   background-image: linear-gradient(to right, green, rgba(0, 128, 0, 0.2));
 }
 
@@ -266,7 +272,7 @@ button:active {
   display: block;
   width: 30mm;
   height: 3mm;
-  transform: translateY(-2.1mm);
+  transform: translateY(-6mm);
   background-image: linear-gradient(to right, rgb(4, 63, 4), white);
 }
 
@@ -274,15 +280,15 @@ button:active {
   display: block;
   width: 30mm;
   height: 7mm;
-  transform: translateY(-2.1mm);
+  transform: translateY(-6mm);
   background-image: linear-gradient(to right, green, white);
 }
 
 #card #grad div:nth-of-type(2) span:nth-of-type(1) {
   display: block;
-  width: 17mm;
+  width: 15mm;
   height: 8mm;
-  transform: translate(12.6mm, -2.5mm);
+  transform: translate(14.5mm, -5mm);
   background-image: linear-gradient(20deg,
       rgba(0, 128, 0, 0.6) 50%,
       rgb(3, 35, 3, 0.9) 50%);
@@ -292,7 +298,7 @@ button:active {
   display: block;
   width: 45mm;
   height: 4mm;
-  transform: translate(-15.5mm, -2.5mm);
+  transform: translate(-15.5mm, -5mm);
   background-image: linear-gradient(to right,
       rgba(0, 128, 0, 0),
       rgb(3, 35, 3, 0.8));
@@ -302,7 +308,7 @@ button:active {
   display: block;
   width: 45mm;
   height: 4mm;
-  transform: translate(-15.5mm, -2.5mm);
+  transform: translate(-15.5mm, -5mm);
   background-color: rgba(0, 128, 0, 0.1);
 }
 
@@ -310,7 +316,7 @@ button:active {
   display: block;
   width: 45mm;
   height: 8mm;
-  transform: translate(-15.5mm, -2.5mm);
+  transform: translate(-15.5mm, -5mm);
   background-image: linear-gradient(to right,
       rgba(0, 128, 0, 0),
       rgba(0, 128, 0, 0.2),
