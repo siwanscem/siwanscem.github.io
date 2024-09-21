@@ -60,7 +60,7 @@
   max-width: 23mm;
   min-width: 23mm;
   margin: 0 0.1rem;
-  mix-blend-mode:darken;
+  mix-blend-mode:normal;
   margin-bottom: 1rem;
   z-index: 5;
 
@@ -223,7 +223,8 @@ button:active {
 
 #card #grad {
   display: flex;
-  z-index: 1;
+  z-index:-2;
+
   width: 54mm;
   position: relative;
   transform: translate(-8mm, -128mm);
@@ -233,6 +234,7 @@ button:active {
 #card #grad div:nth-of-type(1) {
   display: inline-block;
   transform: rotate(-20deg) skew(-20deg) translate(6.5mm, 0mm);
+
 }
 
 #card #grad div:nth-of-type(2) {
@@ -246,6 +248,7 @@ button:active {
   width: 46mm;
   height: 3mm;
   transform: translate(-11mm, 4mm);
+  
   background-image: linear-gradient(to right,
       rgb(4, 63, 4),
       rgba(0, 128, 0, 0.2));
