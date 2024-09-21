@@ -20,7 +20,7 @@ function generateHTML() {
     heading = scem;
     lglink = "/asset/newlogo.png";
   }
- 
+
   const name = document.getElementById("name").value;
   const session = document.getElementById("session").value;
   const tsession = document.getElementById("tsession").value;
@@ -40,16 +40,6 @@ function generateHTML() {
 
   const pin = document.getElementById("pin").value;
   const htmlContent = `
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student ID Card@SCEM</title>
-     
-  </head>
-  <body>
-    <br /><br /><br /><br />
     <div id="card">
       ${heading}
       <div class="flex">
@@ -125,24 +115,20 @@ function generateHTML() {
       </div>
     </div>
 
-    <br /><br />
-    <button id="pre" onclick="hide();window.print();">
-      Print this ID-Card
-    </button>
-    
-  </body>
-</html>
-
   `;
 
   document.getElementById("generatebtn").innerText = "Update Details";
-
+  document.getElementById("pre").style.display = "block";
+  document.getElementById("btn-one").style.display = "block";
   document.getElementById("idcard").innerHTML = htmlContent;
+
 
   alert("Your ID Card is ready :) \n Scroll to see ! \n Click on print button to save as pdf");
 }
 
 function hide() {
   document.getElementById("tohide2").style.display = "none";
+  document.getElementById("btn-one").style.display = "none";
   document.getElementById("pre").style.display = "none";
+
 }

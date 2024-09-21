@@ -8,9 +8,7 @@
 
   <link rel="stylesheet" href="/form.css" />
   <link rel="stylesheet" href="/card.css" />
-  <!-- js pdf library for printing in png  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+
 </head>
 
 <body>
@@ -154,7 +152,7 @@
         <option value="2040">2040</option>
         <option value="2041">2041</option>
         <option value="2042">2042</option>
-       
+
       </select>
       <label for="tsession"> to </label>
       <select name="tsession" id="tsession">
@@ -179,7 +177,7 @@
         <option value="-40">2040</option>
         <option value="-41">2041</option>
         <option value="-42">2042</option>
-       
+
       </select>
       <br /><br />
 
@@ -201,21 +199,29 @@
   </div>
   <div id="idcard"></div>
 
+
+  <br>
+ 
+  <br /><br />
+  <div id="sbtns">
+  <button id="pre" onclick="hide();window.print();">
+    Print this ID-Card
+  </button>
+  
+  <button id="btn-one">Download</button>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+    integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="/printlib/print.js"></script>
+
   <script src="/scem.js"></script>
-    <script>
-      document.getElementById('savePdf').addEventListener('click',function(){
-        const { jsPDF } = window.jspdf;
 
-        html2canvas(document.querySelector('#idcard')).then(canvas=>{
-          const imgData = 
-          canvas.toDataURL('image/png');
-          const pdf = new jsPDF();
-          pdf.addImage(imgData,'PNG', 0,0);
-          pdf.save("youridcard.pdf");
-        });
-        });
 
-    </script>
+  </script>
 </body>
 
 </html>

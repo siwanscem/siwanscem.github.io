@@ -2,6 +2,21 @@ body {
   margin: 0;
   padding: 0;
 }
+#idcard{
+  padding: 50px;
+
+}
+#pre{
+  display: none;
+}
+#btn-one{
+  display: none;
+}
+#sbtns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 #tohide2 {
   background-image: url("/asset/clgfront.jpg");
