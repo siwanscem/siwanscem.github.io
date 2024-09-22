@@ -82,7 +82,7 @@ function generateHTML() {
       </div>
       <div>
         <span> Islamia Nagar, Surapur, Siwan - 841226 </span>
-        <span> Mob : 9801979696, 8271870080, 8298078825 </span>
+        <span> Mob : 6201105725, 8271870080, 8145932969 </span>
       </div>
 
        <div id="logo">

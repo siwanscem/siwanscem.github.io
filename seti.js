@@ -16,9 +16,11 @@ function generateHTML() {
   if (clicked) {
     heading = seti;
     lglink = "/asset/old logo.jpg";
+    bglink = "/asset/bgimage.png";
   } else {
     heading = scem;
     lglink = "/asset/newlogo.png";
+    bglink = "/asset/bgimage.png";
   }
 
   const name = document.getElementById("name").value;
@@ -40,22 +42,12 @@ function generateHTML() {
 
   const pin = document.getElementById("pin").value;
   const htmlContent = `
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student ID Card@SCEM</title>
-     
-  </head>
-  <body>
-    <br /><br /><br /><br />
     <div id="card">
       ${heading}
       <div class="flex">
-        <span>Session : ${session}${tsession}</span>
+          <span id="sesion">Session&nbsp;:&nbsp;${session}&nbsp;${tsession}</span>
         <img id="pic" src="${imglink}" alt="_picture" />
-        <span>&#129656;<br />${bgrp}<sup style="display: inline">${rh}</sup></span>
+        <span>&#129656;<br />${bgrp}&nbsp;<sup style="display: inline">${rh}</sup></span>
       </div>
       <div><i>&nbsp;${name}</i></div>
       <div>
@@ -87,7 +79,6 @@ function generateHTML() {
       
       <div>
         <img id="spic" src="asset/principlesign.svg" alt="sign_" />
-        <span><i>Issuing Authority</i></span>
       </div>
       <div>
         <span> Islamia Nagar, Surapur, Siwan - 841226 </span>
@@ -97,52 +88,27 @@ function generateHTML() {
        <div id="logo">
         <img src="${lglink}" alt="logo" id="lg"/>
       </div>
-      <div id="grad">
-        <div><span>
-          &nbsp;
-        </span><span>
-          &nbsp;
-        </span><span>
-          &nbsp;
-        </span><span>
-          &nbsp;
-        </span></div>
-  
-  
-        <div><span>
-          &nbsp;
-        </span>
-        <span>
-          &nbsp;
-        </span>
-        <span>
-          &nbsp;
-        </span>
-        <span>
-         &nbsp;
-        </span>
-         </div>
+
+
+      <div id="bgimage">
+      <img src="${bglink}">
       </div>
     </div>
-
-    <br /><br />
-    <button id="pre" onclick="hide();window.print();">
-      Print this ID-Card
-    </button>
-  </body>
-</html>
 
   `;
 
   document.getElementById("generatebtn").innerText = "Update Details";
-
+  document.getElementById("pre").style.display = "block";
+  document.getElementById("btn-one").style.display = "block";
   document.getElementById("idcard").innerHTML = htmlContent;
+
 
   alert("Your ID Card is ready :) \n Scroll to see ! \n Click on print button to save as pdf");
 }
 
 function hide() {
-
   document.getElementById("tohide2").style.display = "none";
+  document.getElementById("btn-one").style.display = "none";
   document.getElementById("pre").style.display = "none";
+
 }
