@@ -3,16 +3,14 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
   <title>SCEM@ID-CARD</title>
 
   <link rel="stylesheet" href="/form.css" />
   <link rel="stylesheet" href="/card.css" />
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
-    integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/print/print.js"></script>
+
 </head>
 
 <body>
@@ -136,6 +134,8 @@
       <label for="session">Session :</label>
       <select name="session" id="session">
         <option value=""></option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
         <option value="2023">2023</option>
         <option value="2024">2024</option>
         <option value="2025">2025</option>
@@ -161,6 +161,8 @@
       <label for="tsession"> to </label>
       <select name="tsession" id="tsession">
         <option value=""></option>
+        <option value="-21">2021</option>
+        <option value="-22">2022</option>
         <option value="-23">2023</option>
         <option value="-24">2024</option>
         <option value="-25">2025</option>
@@ -223,11 +225,14 @@
     document.addEventListener('DOMContentLoaded', function () {
 
       document.querySelector('#btn-one').addEventListener('click', function () {
-        html2canvas(document.querySelector('#card')).then((canvas) => {
+        html2canvas(document.querySelector('#card'),{scale:10}).then((canvas) => {
           let base64image = canvas.toDataURL('image/png');
-          let pdf = new jsPDF('p', 'mm', [56,88]);
-          pdf.addImage(base64image, 'mm', 1, 1, 53.98, 85.60);
-          pdf.save('Youridcard.pdf');
+            let link = document.createElement('a');
+            link.href = base64image;
+            link.download = 'YourIDCard.png';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         });
       });
 

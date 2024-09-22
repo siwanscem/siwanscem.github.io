@@ -16,9 +16,11 @@ function generateHTML() {
   if (clicked) {
     heading = seti;
     lglink = "/asset/old logo.jpg";
+    bglink = "/asset/bgimage.png";
   } else {
     heading = scem;
     lglink = "/asset/newlogo.png";
+    bglink = "/asset/bgimage.png";
   }
 
   const name = document.getElementById("name").value;
@@ -77,7 +79,6 @@ function generateHTML() {
       
       <div>
         <img id="spic" src="asset/principlesign.svg" alt="sign_" />
-        <span><i>Issuing Authority</i></span>
       </div>
       <div>
         <span> Islamia Nagar, Surapur, Siwan - 841226 </span>
@@ -87,33 +88,10 @@ function generateHTML() {
        <div id="logo">
         <img src="${lglink}" alt="logo" id="lg"/>
       </div>
-      <div id="grad">
-        <div><span>
-          &nbsp;
-        </span><span>
-          &nbsp;
-        </span><span>
-          &nbsp;
-        </span><span>
-          &nbsp;
-        </span></div>
-  
-  
-        <div><span>
-          &nbsp;
-        </span>
-        <span>
-          &nbsp;
-        </span>
-        <span>
-          &nbsp;
-        </span>
-        <span>
-         &nbsp;
-        </span>
-         </div>
 
-       
+
+      <div id="bgimage">
+      <img src="${bglink}">
       </div>
     </div>
 

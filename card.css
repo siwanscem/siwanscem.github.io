@@ -3,7 +3,7 @@
   height: 86mm;
   width: 54mm;
   margin: 5rem auto;
-  border: 1px solid green;
+  border: 1mm solid green;
   border-radius: 0.5rem;
   box-shadow: 2px 2px 6px;
   background-color: white;
@@ -11,12 +11,21 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+
+#card #bgimage img {
+  height: 40mm;
+  transform: translate(0mm, -135mm);
+  width: 54mm;
+  z-index: -6;
+  mix-blend-mode: multiply;
+}
+
 #card h1 {
   padding: 2mm 1mm;
   text-align: center;
   font-size: 0.9rem;
   font-weight: 750;
-
+  mix-blend-mode: multiply;
   color: rgb(3, 90, 3);
   line-height: 0.9;
   text-transform: uppercase;
@@ -31,25 +40,25 @@
 
 #card div:nth-of-type(1) {
   display: flex;
-
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+  z-index: 10;
 }
 
 
 
 
 #card div:nth-of-type(1) span:nth-of-type(1) {
-
-  padding-right: 0mm;
-  margin-bottom: 1.4rem;
+  min-width: 15mm;
   letter-spacing: 0.1mm;
   z-index: 2;
-display: inline;
-
+  display: inline-block;
   font-size: x-small;
   font-weight: 550;
   color: rgb(231, 1, 1);
-  position: relative;
-  transform: translateX(12mm) rotate(-90deg);
+  transform: translate(5mm, 2mm) rotate(-90deg);
 }
 
 
@@ -62,8 +71,6 @@ display: inline;
   max-width: 23mm;
   min-width: 23mm;
   margin: 0 0.1rem;
-  position: relative;
-  transform: translateX(-8mm);
   mix-blend-mode: normal;
   margin-bottom: 1rem;
   z-index: 5;
@@ -72,11 +79,12 @@ display: inline;
 
 
 #card div:nth-of-type(1) span:nth-of-type(2) {
-  margin: 0 0.2rem;
+
+  margin: 0 2mm;
+  transform: translateY(-2.5mm);
   font-size: small;
   font-weight: 600;
-  transform: translate(-7mm,-2.5mm);
-  align-content: center;
+  min-width: 15mm;
   z-index: 3;
 }
 
@@ -106,6 +114,7 @@ display: inline;
   margin: 0.5mm 0.8rem;
   position: relative;
   transform: translateY(-1.2rem);
+  z-index: 10;
 }
 
 #card div:nth-of-type(3) span:nth-of-type(1) {
@@ -165,15 +174,14 @@ display: inline;
 
 #card div:nth-of-type(4) img {
   max-width: 24mm;
+  padding-bottom: 4.5mm;
+  mix-blend-mode: multiply;
+  z-index: 20;
   float: right;
-  transform: translate(0mm, 3mm);
+  transform: translate(4mm, 4.5mm);
 }
 
-#card div:nth-of-type(4) span {
-  font-size: xx-small;
-  color: red;
-  font-weight: 600;
-}
+
 
 #card div:nth-of-type(5) {
   font-size: xx-small;
@@ -195,7 +203,7 @@ display: inline;
   max-width: 75%;
   margin: 0 auto;
   mix-blend-mode: multiply;
-  opacity: 0.1;
+  opacity: 0.2;
   transform: translate(8mm, -65mm);
   z-index: 2;
 }
@@ -226,101 +234,4 @@ button:active {
   transition-duration: 0.2s;
   background-color: red;
 
-}
-
-#card #grad {
-  display: flex;
-  z-index: -2;
-
-  width: 54mm;
-  position: relative;
-  transform: translate(-8mm, -128.5mm);
-  overflow: unset;
-}
-
-#card #grad div:nth-of-type(1) {
-  display: inline-block;
-  transform: rotate(-20deg) skew(-20deg) translate(6.65mm, 5.5mm);
-
-}
-
-#card #grad div:nth-of-type(2) {
-  display: inline-block;
-
-  transform: rotate(-20deg) skew(-20deg) translate(-16.4mm, -3mm);
-}
-
-#card #grad div:nth-of-type(1) span:nth-of-type(1) {
-  display: block;
-  width: 46.5mm;
-  height: 3mm;
-  transform: translate(0mm, 0mm);
-  background-image: linear-gradient(to right,
-      rgb(4, 63, 4),
-      rgba(0, 128, 0, 0.2));
-}
-
-#card #grad div:nth-of-type(1) span:nth-of-type(2) {
-  display: block;
-  width: 46.5mm;
-  height: 5.2mm;
-  transform: translate(-0.8mm, -6mm);
-  background-image: linear-gradient(to right, green, rgba(0, 128, 0, 0.2));
-}
-
-#card #grad div:nth-of-type(1) span:nth-of-type(3) {
-  display: block;
-  width: 30mm;
-  height: 3mm;
-  transform: translateY(-6mm);
-  background-image: linear-gradient(to right, rgb(4, 63, 4), white);
-}
-
-#card #grad div:nth-of-type(1) span:nth-of-type(4) {
-  display: block;
-  width: 30mm;
-  height: 7mm;
-  transform: translateY(-6mm);
-  background-image: linear-gradient(to right, green, white);
-}
-
-#card #grad div:nth-of-type(2) span:nth-of-type(1) {
-  display: block;
-  width: 15mm;
-  height: 8mm;
-  transform: translate(14.5mm, -5mm);
-  background-image: linear-gradient(20deg,
-      rgba(0, 128, 0, 0.6) 50%,
-      rgb(3, 35, 3, 0.9) 50%);
-}
-
-#card #grad div:nth-of-type(2) span:nth-of-type(2) {
-  display: block;
-  width: 45mm;
-  height: 4mm;
-  transform: translate(-15.5mm, -5mm);
-  background-image: linear-gradient(to right,
-      rgba(0, 128, 0, 0),
-      rgb(3, 35, 3, 0.8));
-}
-
-#card #grad div:nth-of-type(2) span:nth-of-type(3) {
-  display: block;
-  width: 45mm;
-  height: 4mm;
-  transform: translate(-15.5mm, -5mm);
-  background-color: rgba(0, 128, 0, 0.1);
-}
-
-#card #grad div:nth-of-type(2) span:nth-of-type(4) {
-  display: block;
-  width: 45mm;
-  height: 8mm;
-  transform: translate(-15.5mm, -5mm);
-  background-image: linear-gradient(to right,
-      rgba(0, 128, 0, 0),
-      rgba(0, 128, 0, 0.2),
-      rgba(0, 128, 0, 0.4),
-      rgba(0, 128, 0, 0.6),
-      rgb(3, 35, 3, 0.8));
 }
