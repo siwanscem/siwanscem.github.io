@@ -5,6 +5,8 @@
   font-family: "Arial", sans-serif;
 }
 
+
+
 body {
   background-image: linear-gradient(-20deg,
       royalblue,
@@ -38,9 +40,11 @@ body {
   margin-bottom: 20px;
   font-size: x-large;
   color: rgb(222, 121, 7);
-
   font-family: "Times New Roman", Times, serif;
 }
+
+
+
 
 .input-group {
   margin-bottom: 15px;
@@ -75,6 +79,7 @@ body {
 .input-group select {
   appearance: none;
   background: #f6f6f6;
+  cursor: pointer;
 }
 
 .input-group textarea {
@@ -90,8 +95,21 @@ body {
   border-radius: 4px;
   font-size: 16px;
   transition: background-color 0.3s;
+
 }
 
 .submit-btn:hover {
   background-color: #dd5a23;
+cursor: pointer;
+}
+
+
+
+
+
+
+#author h1{
+  color: rgb(222, 121, 7);
+  font-family: cursive;
+
 }

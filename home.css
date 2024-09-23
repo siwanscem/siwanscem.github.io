@@ -32,7 +32,7 @@ body {
 
 }
 
-#nav ul a li:hover {
+#nav ul a li{
   transition-duration: 1s;
   background-color: dodgerblue;
   border-color: white;
@@ -43,6 +43,9 @@ body {
   outline: none;
 }
 
+#nav ul a li:hover{
+  background-color: green;
+}
 #nav ul a li:active {
   border-radius: 0;
   scale: 1.2;
