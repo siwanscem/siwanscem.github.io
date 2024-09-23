@@ -13,7 +13,7 @@
 
 
 #card #bgimage img {
-  height: 40mm;
+  height: 42.5mm;
   transform: translate(0mm, -135mm);
   width: 54mm;
   z-index: -6;
@@ -34,8 +34,9 @@
 }
 
 #card h1 span {
-  letter-spacing: -0.3mm;
-  padding: 0;
+  letter-spacing: -0.28mm;
+ padding: 0;
+  
 }
 
 #card div:nth-of-type(1) {
@@ -159,7 +160,7 @@
 }
 
 #card>table tr:nth-of-type(5) {
-  max-height: 7.4mm;
+  max-height:7mm;
   overflow: hidden;
 }
 
@@ -173,12 +174,12 @@
 }
 
 #card div:nth-of-type(4) img {
-  max-width: 24mm;
+  max-width: 22mm;
   padding-bottom: 4.5mm;
   mix-blend-mode: multiply;
   z-index: 20;
   float: right;
-  transform: translate(4mm, 4.5mm);
+  transform: translate(0mm,4.5mm);
 }
 
 
@@ -187,14 +188,14 @@
   font-size: xx-small;
   background-color: rgb(3, 90, 3);
   color: white;
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius:0.3rem;
+  border-bottom-right-radius: 0.3rem;
   display: flex;
   flex-direction: column;
   line-height: 1.1;
   text-align: center;
 
-  transform: translateY(-3.62rem);
+  transform: translateY(-3.6rem);
   height: 6.5mm;
 }
 
