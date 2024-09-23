@@ -123,6 +123,15 @@ body {
   width: 5rem;
 }
 
+
+#myForm #input-file{
+  padding: 0.5rem;
+  border: 1px solid;
+  cursor: pointer;
+  width: 12rem;
+}
+
+
 #myForm select {
   border: none;
 
