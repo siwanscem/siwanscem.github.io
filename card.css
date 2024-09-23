@@ -35,8 +35,8 @@
 
 #card h1 span {
   letter-spacing: -0.28mm;
- padding: 0;
-  
+  padding: 0;
+
 }
 
 #card div:nth-of-type(1) {
@@ -160,7 +160,7 @@
 }
 
 #card>table tr:nth-of-type(5) {
-  max-height:7mm;
+  max-height: 7mm;
   overflow: hidden;
 }
 
@@ -179,7 +179,7 @@
   mix-blend-mode: multiply;
   z-index: 20;
   float: right;
-  transform: translate(0mm,4.5mm);
+  transform: translate(0mm, 4.5mm);
 }
 
 
@@ -188,7 +188,7 @@
   font-size: xx-small;
   background-color: rgb(3, 90, 3);
   color: white;
-  border-bottom-left-radius:0.3rem;
+  border-bottom-left-radius: 0.3rem;
   border-bottom-right-radius: 0.3rem;
   display: flex;
   flex-direction: column;
@@ -196,8 +196,8 @@
   text-align: center;
 
   transform: translateY(-3.6rem);
-  
-  min-height:6.8mm;
+
+  min-height: 6.8mm;
 }
 
 #card #logo img {

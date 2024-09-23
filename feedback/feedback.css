@@ -100,7 +100,7 @@ body {
 
 .submit-btn:hover {
   background-color: #dd5a23;
-cursor: pointer;
+  cursor: pointer;
 }
 
 
@@ -108,7 +108,7 @@ cursor: pointer;
 
 
 
-#author h1{
+#author h1 {
   color: rgb(222, 121, 7);
   font-family: cursive;
 

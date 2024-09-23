@@ -13,44 +13,133 @@ body {
     color: white;
 }
 
-#head1 {
-    font-size: x-large;
-    
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.head2{
+#head1 {
+    font-size: x-large;
+
+}
+
+.head2 {
     font-size: large;
     text-align: left;
     margin-left: 2rem;
 }
 
-p{
+p {
     text-align: justify;
-  max-width: 750px;
-  margin: 0 auto;
-   padding: 0 1rem;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
-p:nth-of-type(5){
+
+p:nth-of-type(5) {
 
     padding-bottom: 5rem;
-    
+
 }
-h1{
+
+h1 {
     font-family: cursive;
     color: rgb(222, 121, 7);
 }
 
-a{
+a {
     text-decoration: none;
     color: grey;
 }
 
-footer{
+footer {
     color: grey;
     font-size: small;
     padding-bottom: 5rem;
 }
-body{
-    max-width:1024px ;
+
+body {
+    max-width: 1024px;
     margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+#profiledescription {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 0 auto;
+    cursor: cell;
+}
+
+
+
+#profiledescription div img {
+    max-width: 6rem;
+    margin: 1rem;
+    border-radius: 50%;
+
+
+}
+
+#profiledescription div p {
+    font-size: medium;
+    text-align: center;
+    cursor: grab;
+}
+
+
+#profiledescription div {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    max-height: 10rem;
+    max-width: 10rem;
+    margin: 4rem;
+    background-color: rgb(153, 134, 170);
+    border: 5px solid white;
+    border-radius: 20px;
+    font-size: x-large;
+    text-align: center;
+
+}
+
+#profiledescription div:hover,
+#profiledescription div:hover img {
+    box-shadow: 0 0 1rem white;
+    transition-duration: 600ms;
+}
+
+#profiledescription div:nth-of-type(1) {}
+
+.btn {
+
+    width: 11rem;
+    height: 3rem;
+    font-size: large;
+    margin-top: 0.4rem;
+    cursor: pointer;
+    border-radius: 2rem;
+
+}
+
+.btn:hover {
+    box-shadow: 0rem 0rem 0.5rem black;
+    color: rgb(222, 121, 7);
+}
+
+.btn:active {
+    scale: 1.1;
+    transition-duration: 300ms;
 }
