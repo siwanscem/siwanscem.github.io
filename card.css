@@ -196,7 +196,8 @@
   text-align: center;
 
   transform: translateY(-3.6rem);
-  height: 6.5mm;
+  
+  min-height:6.8mm;
 }
 
 #card #logo img {
